@@ -1,7 +1,7 @@
 import Fila from './Fila.js';
 import Pilha from './Pilha.js';
 
-// QUESTÃO 1 - Pilha usando duas filas
+// Questão 1:
 export class PilhaComDuasFilas {
     constructor(size) {
         this.fila1 = new Fila();
@@ -47,7 +47,7 @@ export class PilhaComDuasFilas {
     }
 }
 
-// QUESTÃO 2 - Fila usando duas pilhas
+// Questão 2:
 export class FilaComDuasPilhas {
     constructor(size) {
         this.pilha1 = new Pilha(size);
@@ -92,7 +92,7 @@ export class FilaComDuasPilhas {
     }
 }
 
-// QUESTÃO 3 - Controle de caminhoneiros
+// Questão 3:
 export class ControleCaminhoneiros {
     constructor() {
         this.fila = new Fila();
@@ -133,7 +133,7 @@ export class ControleCaminhoneiros {
     }
 }
 
-// QUESTÃO 4 - Intercalar duas filas
+// Questão 4:
 export function intercalarFilas(fila1, fila2) {
     const resultado = new Fila();
     resultado.setSize(fila1.size + fila2.size);
@@ -151,6 +151,7 @@ export function intercalarFilas(fila1, fila2) {
     return resultado;
 }
 
+// Questão 5:
 export class Deque {
     constructor(size) {
         this.size = size;
@@ -207,7 +208,7 @@ export class Deque {
     }
 }
 
-// QUESTÃO 6: Função recursiva para inverter uma fila
+// Questão 6:
 export function inverterFila(fila) {
     if (fila.isEmpty()) {
         return;
